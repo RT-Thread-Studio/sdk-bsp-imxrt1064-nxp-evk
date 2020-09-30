@@ -1,8 +1,8 @@
 board:
   buy_url_cn: https://www.nxp.com.cn/design/development-boards/i-mx-evaluation-and-development-boards/mimxrt1064-evk-i-mx-rt1064-evaluation-kit:MIMXRT1064-EVK
-  buy_url_global: https://www.nxp.com.cn/design/development-boards/i-mx-evaluation-and-development-boards/mimxrt1064-evk-i-mx-rt1064-evaluation-kit:MIMXRT1064-EVK/
+  buy_url_global: https://www.nxp.com.cn/design/development-boards/i-mx-evaluation-and-development-boards/mimxrt1064-evk-i-mx-rt1064-evaluation-kit:MIMXRT1064-EVK
   debug_interface: JTAG
-  debugger: JTAG
+  debugger: J-Link
   description_en: The i.MX RT1064 EVK is a 4-layer through-hole USB-powered PCB. At its heart lies the i.MX RT1064 crossover MCU, featuring NXP’s advanced implementation of the Arm® Cortex®-M7 core. This core operates at speeds up to 600 MHz to provide high CPU performance and excellent real-time response.
   description_zh: i.MX RT1064 EVK是一款4层穿孔式USB供电PCB。该板的核心为i.MX RT1064跨界MCU，采用恩智浦先进的 Arm Cortex-M7内核实施方案。该内核运行速度高达600 MHz，可提供较高的CPU性能与卓越的实时响应。
   emulator_machine: ''
@@ -27,7 +27,7 @@ chip:
   target_freq: '600000000'
   tx_name: ''
   uart_name: ''
-default_projects:
+template_projects:
 - builtin_files:
   - files_and_folders:
     - .config
@@ -72,7 +72,65 @@ default_projects:
     - include
     - libcpu/arm
     - libcpu/Kconfig
-    - libcpu/Sconscript
+    - libcpu/SConscript
+    - src
+    - tools
+    - Kconfig
+    - LICENSE
+    package_name: RT-Thread
+    package_type: RT-Thread_Source_Code
+    package_vendor: ''
+    package_version: 4.0.2
+    source_path_offset: ''
+    target_path_offset: rt-thread
+  project_description: ''
+  project_name: ''
+  project_type: rt-thread|@full|@4.0.2
+- builtin_files:
+  - files_and_folders:
+    - .config
+    - .config.old
+    - .cproject
+    - .project
+    - .settings
+    - applications
+    - board
+    - cconfig.h
+    - figures
+    - Kconfig
+    - libraries
+    - makefile.targets
+    - packages
+    - project.ewd
+    - project.ewp
+    - project.eww
+    - project.uvoptx
+    - project.uvprojx
+    - README.md
+    - rtconfig.h
+    - rtconfig.py
+    - rtconfig_preinc.h
+    - rtthread.bin
+    - rtthread.elf
+    - rtthread.map
+    - SConscript
+    - SConstruct
+    - template.ewd
+    - template.ewp
+    - template.ewt
+    - template.eww
+    - template.uvoptx
+    - template.uvprojx
+    - xip
+    source_path_offset: rtt_default_project_0
+    target_path_offset: ''
+  external_files:
+  - files_and_folders:
+    - components
+    - include
+    - libcpu/arm
+    - libcpu/Kconfig
+    - libcpu/SConscript
     - src
     - tools
     - Kconfig
@@ -112,5 +170,5 @@ features_zh:
 - 调试接口，标准 JTAG/SWD
 pkg_type: Board_Support_Packages
 pkg_vendor: RealThread
-pkg_version: 0.1.0
-yaml_version: 2
+pkg_version: 1.0.0
+yaml_version: 3

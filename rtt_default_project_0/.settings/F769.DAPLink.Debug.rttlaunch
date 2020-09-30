@@ -19,7 +19,7 @@
 <stringAttribute key="ilg.gnumcueclipse.debug.gdbjtag.pyocd.otherInitCommands" value=""/>
 <stringAttribute key="ilg.gnumcueclipse.debug.gdbjtag.pyocd.otherRunCommands" value=""/>
 <stringAttribute key="ilg.gnumcueclipse.debug.gdbjtag.pyocd.secondResetType" value="halt"/>
-<stringAttribute key="ilg.gnumcueclipse.debug.gdbjtag.svdPath" value="${rtt_install_path}\repo\Extract\Chip_Support_Packages\RealThread\STM32F7\0.1.9\debug\svd\STM32F7x9_v1r2.svd"/>
+<stringAttribute key="ilg.gnumcueclipse.debug.gdbjtag.svdPath" value="${rtt_install_path}/repo/Extract/Board_Support_Packages/RealThread/IMXRT1064-NXP-EVK/1.0.0/debug/svd/MIMXRT1064.svd"/>
 <stringAttribute key="org.eclipse.cdt.debug.gdbjtag.core.imageFileName" value=""/>
 <stringAttribute key="org.eclipse.cdt.debug.gdbjtag.core.imageOffset" value=""/>
 <stringAttribute key="org.eclipse.cdt.debug.gdbjtag.core.jtagDevice" value="GNU MCU PyOCD"/>
