@@ -38,6 +38,7 @@
 <intAttribute key="ilg.gnumcueclipse.debug.gdbjtag.jlink.gdbServerTelnetPortNumber" value="2333"/>
 <stringAttribute key="ilg.gnumcueclipse.debug.gdbjtag.jlink.interfaceSpeed" value="auto"/>
 <stringAttribute key="ilg.gnumcueclipse.debug.gdbjtag.jlink.jlinkExecutable" value="${rtt_install_path}/repo/Extract/Debugger_Support_Packages/SEGGER/J-Link/6.80d/JLink.exe"/>
+<stringAttribute key="ilg.gnumcueclipse.debug.gdbjtag.svdPath" value="${rtt_install_path}/repo/Extract/Board_Support_Packages/RealThread/IMXRT1064-NXP-EVK/1.0.0/debug/svd/MIMXRT1064.svd"/>
 <stringAttribute key="ilg.gnumcueclipse.debug.gdbjtag.jlink.otherInitCommands" value=""/>
 <stringAttribute key="ilg.gnumcueclipse.debug.gdbjtag.jlink.otherRunCommands" value=""/>
 <stringAttribute key="ilg.gnumcueclipse.debug.gdbjtag.jlink.secondResetType" value=""/>
